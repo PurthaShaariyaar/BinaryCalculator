@@ -208,44 +208,6 @@ public class Binary
 	 * @return Returns binary output of operation  
 	 */ 
 
-	// public static Binary multOperation(Binary num1, Binary num2) {
-	// 	// Call equalLength to manipulate both binary numbers to have equal lengths
-	// 	String[] equalBinarySet = equalLength(num1, num2); 
-
-	// 	// Set new binary set of numbers 
-	// 	String nStrOne = equalBinarySet[0];
-	// 	String nStrTwo = equalBinarySet[1];
-
-	// 	// Set final result
-	// 	Binary result = new Binary("0");
-
-	// 	// Initiate bits
-	// 	int bitOne = nStrOne.length() -1; 
-	// 	int bitTwo = nStrTwo.length() -1; 
-
-	// 	// Loop through first binary number from right side to perform correct Multiply operation
-	// 	for (int i = bitOne; i >= 0; i--) {
-
-	// 		// Append zeros to the right end of the result 
-	// 		String currentBinNum = new String(new char[nStrOne.length() -1 - i]).replace("\0", "0");
-
-	// 		// Loop through each bit of the second binary number and multiply it with the first binary number
-	// 		for (int j = bitTwo; j >= 0; j--) {
-	// 			if (nStrOne.charAt(i) == nStrTwo.charAt(j)) {
-	// 				currentBinNum = nStrOne.charAt(i) + currentBinNum; 
-	// 			}
-	// 			else {
-	// 				currentBinNum = "0" + currentBinNum; 
-	// 			}
-	// 		}
-
-	// 		// After result of first iteration, can use AND operation 
-	// 		result = Binary.add(new Binary(currentBinNum), result);
-	// 	}
-
-	// 	return result; 
-	// }
-
 	public static Binary multOperation(Binary num1, Binary num2) {
 		// Call equalLength to manipulate both binary numbers to have equal lengths
 		String[] equalBinarySet = equalLength(num1, num2); 
